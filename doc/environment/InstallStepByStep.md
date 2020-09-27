@@ -5,12 +5,12 @@
 ## 1  安装相关依赖
 
 ```
-sudo apt-get update
+sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
+sudo apt update
 
 sudo apt-get -y --fix-broken install
 
-sudo apt-get install build-essential cmake libgtk2.0-dev pkg-config python-dev python-numpy python3-numpy python-tk python3-tk libavcodec-dev libavformat-dev libswscale-dev autoconf automake libtool libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev dos2unix libboost-dev libboost-thread-dev zlib1g-dev libjpeg-dev libwebp-dev libpng12-dev libtiff5-dev libjasper-dev libopenexr-dev libgdal-dev libdc1394-22-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev yasm libopencore-amrnb-dev libopencore-amrwb-dev libv4l-dev libxine2-dev libtbb-dev libeigen3-dev python3-pip python3-dev
-```
+sudo apt-get install build-essential cmake libgtk2.0-dev pkg-config python-dev python-numpy python3-numpy python-tk python3-tk libavcodec-dev libavformat-dev libswscale-dev autoconf automake libtool libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev dos2unix libboost-dev libboost-thread-dev zlib1g-dev libjpeg-dev libwebp-dev libpng-dev libtiff5-dev libjasper-dev libopenexr-dev libgdal-dev libdc1394-22-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev yasm libopencore-amrnb-dev libopencore-amrwb-dev libv4l-dev libxine2-dev libtbb-dev libeigen3-dev python3-pip python3-dev```
 
 
 
