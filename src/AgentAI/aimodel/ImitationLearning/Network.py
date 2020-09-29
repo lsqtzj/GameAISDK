@@ -22,7 +22,7 @@ from tensorflow import keras
 from tensorflow.python.keras import regularizers
 from tensorflow.python.keras import backend as K
 from tensorflow.python.keras.layers import Input, Activation, BatchNormalization, Flatten, Conv2D
-from tensorflow.python.keras.applications.resnet50 import conv_block, identity_block
+from keras_applications.resnet50 import identity_block, conv_block
 from tensorflow.python.keras.layers import Convolution2D, ZeroPadding2D
 from tensorflow.python.keras.layers import MaxPooling2D, Dense, GlobalAveragePooling2D, PReLU, LSTM
 from tensorflow.python.keras.models import Sequential, Model

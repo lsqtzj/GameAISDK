@@ -1,4 +1,4 @@
-GPU=1
+GPU=0
 CUDNN=0
 OPENCV=0
 OPENMP=1
@@ -47,7 +47,7 @@ endif
 
 ifeq ($(GPU), 1) 
 COMMON+= -DGPU -I/usr/local/cuda/include/
-CFLAGS+= -DGPU -D_FORCE_INLINES
+CFLAGS+= -DGPU
 LDFLAGS+= -L/usr/local/cuda/lib64 -lcuda -lcudart -lcublas -lcurand
 endif
 
@@ -100,7 +100,7 @@ clean:
 	rm -rf $(OBJS) $(SLIB) $(ALIB) $(EXEC) $(EXECOBJ) $(OBJDIR)/*
 
 install:
-	cp $(SLIB) ../lib/libdarknetV3_GPU.so
-	cp $(SLIB) ../../../src/ImgProc/GameRecognize/Lib/libdarknetV3_GPU.so
-	cp $(SLIB) ../../../bin/libdarknetV3_GPU.so
+	cp $(SLIB) ../lib/libdarknetV3_CPU.so
+	cp $(SLIB) ../../../src/ImgProc/GameRecognize/Lib/libdarknetV3_CPU.so
+	cp $(SLIB) ../../../bin/libdarknetV3_CPU.so
 

@@ -1,5 +1,5 @@
 AM_CXXFLAGS=-fPIC  -fpermissive -g -O0 -std=c++11 -Wl,-E \
-            -I /usr/local/protobuf-3.2.0.so/include \
+            -I /usr/local/include/google/protobuf \
             -I  ../include \
             -I  ../Comm/Os \
             -I  ../Comm/Utils \
@@ -9,8 +9,8 @@ AM_CXXFLAGS=-fPIC  -fpermissive -g -O0 -std=c++11 -Wl,-E \
             -I  ../../../Modules/Lua/include \
             -I  ../../../Modules/tbus/libtbus/include \
             -I  ../Comm/ImgReg/Recognizer \
-            -I  /usr/include/python3.5 \
-            -L  /usr/lib/python3.5/config-3.5m-x86_64-linux-gnu \
+            -I  /usr/include/python3.8 \
+            -L  /usr/lib/python3.8/config-3.8-x86_64-linux-gnu \
             -L  ../../../Modules/Json/jsoncpp-master/build/release/src/lib_json \
             -I  ../ \
             -L  /usr/local/lib \
@@ -59,4 +59,4 @@ UIRecognize_SOURCES=../Comm/Utils/TqcCommon.cpp \
                     ../Protobuf/gameregProtoc.pb.cc
 
 
-LIBS=$(UIRECOGNIZELIBFLAG) $(LIBDARKNET) -ljsoncpp -lpython3.5 -Wl,-Bdynamic
+LIBS=$(UIRECOGNIZELIBFLAG) $(LIBDARKNET) -ljsoncpp -lpython3.8 -Wl,-Bdynamic
