@@ -3,14 +3,14 @@ astor
 certifi
 cffi
 chardet
-gast
+gast==0.3.3
 grpcio
 h5py
 idna
 Markdown
 msgpack
 msgpack-numpy
-numpy
+numpy==1.18.5
 opencv-python
 protobuf
 psutil
